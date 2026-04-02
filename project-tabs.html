@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Tabs Component</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="form.html">Contact</a>
+  <a href="project-form.html">Projects</a>
+  <a href="project-accordion.html">Accordion</a>
+  <a href="project-cards.html">Cards</a>
+  <a href="project-audit.html">Audit</a>
+  <a href="project-tabs.html">Tabs</a>
+</nav>
+
+<h1>Accessible Tabs Component</h1>
+
+<p>This project demonstrates an accessible tabs interface using semantic HTML, ARIA roles, and full keyboard support.</p>
+
+<div class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" aria-controls="panel1" id="tab1">Overview</button>
+  <button role="tab" aria-selected="false" aria-controls="panel2" id="tab2">Details</button>
+  <button role="tab" aria-selected="false" aria-controls="panel3" id="tab3">More Info</button>
+</div>
+
+<div id="panel1" role="tabpanel" aria-labelledby="tab1">
+  <p>This tab component is built with accessibility in mind, using ARIA roles and keyboard navigation.</p>
+</div>
+
+<div id="panel2" role="tabpanel" aria-labelledby="tab2" hidden>
+  <p>Tabs allow users to switch between sections of content without leaving the page.</p>
+</div>
+
+<div id="panel3" role="tabpanel" aria-labelledby="tab3" hidden>
+  <p>This implementation supports arrow keys, Enter, and Space for full keyboard usability.</p>
+</div>
+
+<script src="tabs.js"></script>
+
+</body>
+</html>
