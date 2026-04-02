@@ -54,3 +54,28 @@ nav {
 nav a {
   margin-right: 1rem;
 }
+
+.accordion-trigger {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: #eee;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.accordion-trigger:hover,
+.accordion-trigger:focus {
+  background: #ddd;
+  outline: 2px solid #005fcc;
+}
+
+.accordion-panel {
+  padding: 1rem;
+  background: #fafafa;
+  border-left: 3px solid #005fcc;
+}
+
