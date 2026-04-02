@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Audit Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="form.html">Contact</a>
+  <a href="project-form.html">Projects</a>
+  <a href="project-accordion.html">Accordion</a>
+  <a href="project-cards.html">Cards</a>
+  <a href="project-audit.html">Audit</a>
+</nav>
+
+<h1>Accessibility Audit Case Study</h1>
+
+<p>This case study documents an accessibility audit I performed on my own contact form page. The goal was to identify issues that could affect users with disabilities and implement improvements based on WCAG guidelines.</p>
+
+<h2>Audit Scope</h2>
+<ul>
+  <li>Keyboard navigation</li>
+  <li>Screen reader compatibility</li>
+  <li>Form labels and semantics</li>
+  <li>Color contrast</li>
+  <li>Focus visibility</li>
+</ul>
+
+<h2>Issues Found</h2>
+<ol>
+  <li><strong>Missing or unclear form labels</strong><br>
+  Some inputs did not have properly associated <code>&lt;label&gt;</code> elements.</li>
+
+  <li><strong>Insufficient focus styling</strong><br>
+  Interactive elements did not have a clear visible focus indicator.</li>
+
+  <li><strong>Button contrast could be improved</strong><br>
+  The button color contrast was borderline for WCAG AA.</li>
+
+  <li><strong>No success message after submission</strong><br>
+  Users did not receive confirmation that their message was sent.</li>
+</ol>
+
+<h2>Fixes Implemented</h2>
+<ul>
+  <li>Added explicit <code>&lt;label&gt;</code> elements with matching <code>for</code> attributes</li>
+  <li>Improved focus styles for keyboard users</li>
+  <li>Adjusted button colors to meet WCAG AA contrast</li>
+  <li>Added a simple, accessible success message</li>
+</ul>
+
+<h2>What I Learned</h2>
+<p>This audit helped me better understand how small issues can create barriers for users with disabilities. I gained experience identifying accessibility problems, applying WCAG guidelines, and improving the usability of a real component.</p>
+
+<h2>Live Demo</h2>
+<p><a href="form.html" class="button">View the Updated Form</a></p>
+
+</body>
+</html>
