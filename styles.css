@@ -100,3 +100,33 @@ nav a {
 .card p {
   margin-bottom: 1rem;
 }
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+[role="tab"] {
+  padding: 0.6rem 1rem;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+[role="tab"][aria-selected="true"] {
+  background: #005fcc;
+  color: white;
+}
+
+[role="tab"]:focus {
+  outline: 2px solid #005fcc;
+}
+
+[role="tabpanel"] {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #fafafa;
+  border-left: 3px solid #005fcc;
+}
