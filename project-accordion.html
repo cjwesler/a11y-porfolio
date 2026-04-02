@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Accordion Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="form.html">Contact</a>
+  <a href="project-form.html">Projects</a>
+  <a href="project-accordion.html">Accordion Project</a>
+</nav>
+
+<h1>Accessible Accordion Component</h1>
+
+<p>This project demonstrates an accessible accordion built with semantic HTML, ARIA attributes, and full keyboard support.</p>
+
+<div class="accordion">
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="section1">
+    What is an accordion?
+  </button>
+  <div id="section1" class="accordion-panel" hidden>
+    <p>An accordion is a UI component that expands and collapses content sections.</p>
+  </div>
+
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="section2">
+    Why accessibility matters
+  </button>
+  <div id="section2" class="accordion-panel" hidden>
+    <p>Accessible accordions ensure keyboard users and screen readers can navigate content easily.</p>
+  </div>
+
+  <button class="accordion-trigger" aria-expanded="false" aria-controls="section3">
+    How this one works
+  </button>
+  <div id="section3" class="accordion-panel" hidden>
+    <p>This accordion uses semantic HTML, ARIA attributes, and JavaScript to manage state.</p>
+  </div>
+</div>
+
+<script src="accordion.js"></script>
+
+</body>
+</html>
