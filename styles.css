@@ -23,10 +23,33 @@ body {
   background: #f9f9f9;
 }
 
+p {
+  margin-bottom: var(--space-2);
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: var(--space-5);
+}
+
+ul, ol {
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-3);
+}
+
+img {
+  margin-bottom: var(--space-3);
+}
+
 /* Headings */
 h1, h2, h3 {
   line-height: 1.2;
   margin-top: 2rem;
+}
+
+h1, h2, h3 {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 /* Links */
